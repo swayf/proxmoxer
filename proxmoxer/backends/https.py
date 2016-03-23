@@ -8,8 +8,7 @@ import sys
 
 try:
     import requests
-    urllib3 = requests.packages.urllib3
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    import urllib3
     from requests.auth import AuthBase
     from requests.cookies import cookiejar_from_dict
 except ImportError:
